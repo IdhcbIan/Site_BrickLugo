@@ -195,3 +195,47 @@ td {
     padding: 1.5rem;
   }
 }
+
+/* Login page home button */
+.login-box .home-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: transparent;
+  color: #ff6f61;
+  border: 2px solid #ff6f61;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Unna', serif;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.login-box .home-button:hover {
+  background-color: #ff6f61;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Dashboard home button */
+.admin-dashboard .home-button {
+  width: 20%;
+  padding: 1rem;
+  background-color: transparent;
+  color: #ff6f61;
+  border: 2px solid #ff6f61;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Unna', serif;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.admin-dashboard .home-button:hover {
+  background-color: #ff6f61;
+  color: white;
+  transform: translateY(-2px);
+}

@@ -18,7 +18,7 @@ const Admin = () => {
     if (loginData.username === 'admin' && loginData.password === 'admin') {
       setIsAuthenticated(true);
     } else {
-      alert('Invalid credentials');
+      alert('Credenciais inválidas');
     }
   };
 
@@ -33,10 +33,10 @@ const Admin = () => {
     return (
       <div className="admin-login-container">
         <div className="login-box">
-          <h2>Admin Login</h2>
+          <h2>Login do Administrador</h2>
           <form onSubmit={handleLogin}>
             <div className="form-group">
-              <label>Username:</label>
+              <label>Nome de usuário:</label>
               <input
                 type="text"
                 name="username"
@@ -46,7 +46,7 @@ const Admin = () => {
               />
             </div>
             <div className="form-group">
-              <label>Password:</label>
+              <label>Senha:</label>
               <input
                 type="password"
                 name="password"
@@ -56,9 +56,15 @@ const Admin = () => {
               />
             </div>
             <button type="submit" className="login-button">
-              Login
+              Entrar
             </button>
           </form>
+          <button 
+            className="home-button"
+            onClick={() => window.location.href = '/'}
+          >
+            Voltar para Home
+          </button>
         </div>
       </div>
     );
@@ -67,41 +73,47 @@ const Admin = () => {
   return (
     <div className="admin-dashboard">
       <header className="admin-header">
-        <h1>Company Admin Dashboard</h1>
+        <h1>Painel de Administração da Empresa</h1>
         <button 
           className="logout-button"
           onClick={() => setIsAuthenticated(false)}
         >
-          Logout
+          Sair
+        </button>
+        <button 
+          className="home-button"
+          onClick={() => window.location.href = '/'}
+        >
+          Voltar para Home
         </button>
       </header>
 
       <div className="admin-content">
         <section className="data-section">
-          <h2>Employee Data</h2>
+          <h2>Dados dos Funcionários</h2>
           <table>
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Department</th>
+                <th>Nome</th>
+                <th>Posição</th>
+                <th>Departamento</th>
                 <th>Status</th>
               </tr>
             </thead>
             <tbody>
-              {/* Add your employee data here */}
+              {/* Adicione seus dados de funcionários aqui */}
             </tbody>
           </table>
         </section>
 
         <section className="data-section">
-          <h2>Revenue Overview</h2>
-          {/* Add your revenue charts/data here */}
+          <h2>Visão Geral das Receitas</h2>
+          {/* Adicione seus gráficos/dados de receita aqui */}
         </section>
 
         <section className="data-section">
-          <h2>Active Projects</h2>
-          {/* Add your projects list here */}
+          <h2>Projetos Ativos</h2>
+          {/* Adicione sua lista de projetos aqui */}
         </section>
       </div>
     </div>
