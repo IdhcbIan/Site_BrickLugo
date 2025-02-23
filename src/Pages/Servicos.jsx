@@ -5,6 +5,23 @@ import BrickImage from '../assets/Brick.avif'
 import TalkIcon from '../assets/Talk.png'
 import CleanIcon from '../assets/Clean.png'
 import ToolsIcon from '../assets/Tools.png'
+import { createGlobalStyle } from 'styled-components'
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+`
+
+const PageWrapper = styled.div`
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 0;
+`
 
 const ServiceSection = styled.section`
   min-height: 80vh;
@@ -15,6 +32,8 @@ const ServiceSection = styled.section`
   padding: 4rem 2rem;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
+  width: 100%;
+  box-sizing: border-box;
 
   h2 {
     font-size: 2.4rem;
@@ -58,7 +77,7 @@ function Servicos() {
       icon: TalkIcon
     },
     {
-      title: "Limpeza e lavanderia",
+      title: "Limpeza e lavanderia", 
       description: "Mantemos os mais altos padrões de limpeza e higienização. Nossa equipe profissional realiza uma limpeza completa entre as estadias, incluindo troca de roupas de cama e banho, garantindo que cada hóspede encontre um ambiente impecável.",
       icon: CleanIcon
     },
@@ -70,35 +89,40 @@ function Servicos() {
   ]
 
   return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-      >
-        <Header />
-        
-        {services.map((service, index) => (
-          <>
-            <ServiceSection
-              as={motion.section}
-              key={`service-${index}`}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-              <img src={service.icon} alt={service.title} />
-              <h2>{service.title}</h2>
-              <p>{service.description}</p>
-            </ServiceSection>
-            
-            {index < services.length - 1 && <BrickDivider />}
-          </>
-        ))}
-      </motion.div>
-    </AnimatePresence>
+    <>
+      <GlobalStyle />
+      <PageWrapper>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          style={{ width: '100%' }}
+        >
+          <Header />
+          <AnimatePresence mode="wait">
+            {services.map((service, index) => (
+              <>
+                <ServiceSection
+                  as={motion.section}
+                  key={`service-${index}`}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8 }}
+                >
+                  <img src={service.icon} alt={service.title} />
+                  <h2>{service.title}</h2>
+                  <p>{service.description}</p>
+                </ServiceSection>
+                
+                {index < services.length - 1 && <BrickDivider />}
+              </>
+            ))}
+          </AnimatePresence>
+        </motion.div>
+      </PageWrapper>
+    </>
   )
 }
 
-export default Servicos 
+export default Servicos
