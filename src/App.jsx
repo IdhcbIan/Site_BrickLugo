@@ -7,6 +7,7 @@ import BrickImage from './assets/Brick.avif'
 import CleanIcon from './assets/Clean.png'
 import TalkIcon from './assets/Talk.png'
 import ToolsIcon from './assets/Tools.png'
+import LogoWhite from './assets/Logo1.png'
 
 
 const GlobalStyle = createGlobalStyle`
@@ -34,7 +35,7 @@ const Hero = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem;
+  padding: 4rem;
   position: relative;
   border-bottom: 3px solid #ff6f61;
   box-shadow: 0 4px 30px rgba(255, 111, 97, 0.15);
@@ -51,24 +52,37 @@ const Hero = styled.section`
   }
   
   @media (max-width: 768px) {
-    padding: 2rem;
+    padding: 3rem;
     min-height: 80vh;
   }
 `
 
-const HeroTitle = styled.h1`
-  font-size: 2.8rem;
-  font-weight: 800;
-  color: white;
+const HeroContent = styled.div`
   position: absolute;
-  top: 20px;
-  right: 20px;
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
-  font-family: 'Unna', serif;
-  
-  @media (max-width: 768px) {
-    font-size: 2.5rem;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+
+  img {
+    width: 200px;
+    height: auto;
+  }
+
+  p {
+    color: white;
+    font-size: 1.4rem;
+    margin: 0;
+    font-family: 'Unna', serif;
+    display: flex;
+    align-items: center;
+    
+    &:before {
+      content: '•';
+      margin-right: 0.8rem;
+    }
   }
 `
 
@@ -268,7 +282,10 @@ function App() {
             exit="exit"
           >
             <Hero>
-              <HeroTitle variants={heroItemVariants}>Bem Vindo a BrickLugo</HeroTitle>
+              <HeroContent>
+                <img src={LogoWhite} alt="BrickLugo Logo" />
+                <p>Nós cuidamos da locação do seu imóvel no Airbnb</p>
+              </HeroContent>
             </Hero>
           </motion.main>
 
@@ -298,8 +315,8 @@ function App() {
               transition={{ duration: 0.8 }}
             >
               <div className="book-content">
-                <h2>Download Our Free Guide - Maximizing Your Airbnb Revenue</h2>
-                <p>Learn the secrets to increasing your Airbnb income with our comprehensive guide. From pricing strategies to guest communication tips, this guide covers everything you need to know to succeed as an Airbnb host.</p>
+                <h2>Download Nosso PDF - Benefícios da BrickLugo & Airbnb</h2>
+                <p>Descubra as vantagens de alugar seu imóvel através da BrickLugo e Airbnb em comparação com a locação tradicional. Nosso guia completo mostra como você pode maximizar seus rendimentos e ter mais segurança com seu imóvel.</p>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -316,7 +333,7 @@ function App() {
                   }}
                 >
                   <a href="/guide" style={{ color: 'white', textDecoration: 'none' }}>
-                    Download Now
+                    Download
                   </a>
                 </motion.button>
               </div>

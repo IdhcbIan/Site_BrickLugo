@@ -85,7 +85,7 @@ function Header() {
         <StyledLink href="/missao">Missão</StyledLink>
         <StyledLink href="/servicos">Serviços</StyledLink>
         <StyledLink href="/depoimentos">Depoimentos</StyledLink>
-        <StyledLink href="/blog">Blog</StyledLink>
+        <StyledLink href="/financeiro">Financeiro</StyledLink>
       </NavLinks>
       <SocialLinks>
         <SocialIcon href="https://www.instagram.com/bricklugo/" target="_blank" rel="noopener noreferrer">
