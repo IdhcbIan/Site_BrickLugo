@@ -16,14 +16,6 @@ const GlobalStyle = createGlobalStyle`
     color: #333333;
     margin: 0;
     padding: 0;
-    background-image: 
-      radial-gradient(#ff6f61 1px, transparent 1px),
-      linear-gradient(45deg, rgba(255,111,97,0.1) 1px, transparent 1px),
-      linear-gradient(-45deg, rgba(255,111,97,0.1) 1px, transparent 1px),
-      linear-gradient(45deg, rgba(255,192,203,0.05) 50%, transparent 50%),
-      linear-gradient(-45deg, rgba(255,182,193,0.05) 50%, transparent 50%),
-      radial-gradient(circle at 50% 50%, rgba(255,192,203,0.1) 1px, transparent 2px);
-    background-size: 32px 32px, 16px 16px, 16px 16px, 64px 64px, 64px 64px, 48px 48px;
     font-family: 'Unna', serif;
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
