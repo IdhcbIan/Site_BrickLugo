@@ -91,7 +91,7 @@ function Header() {
         <SocialIcon href="https://www.instagram.com/bricklugo/" target="_blank" rel="noopener noreferrer">
           <FaInstagram />
         </SocialIcon>
-        <SocialIcon href="https://wa.me/message/" target="_blank" rel="noopener noreferrer">
+        <SocialIcon href="https://api.whatsapp.com/send?phone=5531995936705&text=Ol%C3%A1%2C%20eu%20vim%20pelo%20site%20da%20Brick%20Lugo%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20administra%C3%A7%C3%A3o%20de%20Airbnb" target="_blank" rel="noopener noreferrer">
           <FaWhatsapp />
         </SocialIcon>
       </SocialLinks>
