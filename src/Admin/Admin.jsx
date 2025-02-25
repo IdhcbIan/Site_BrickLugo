@@ -15,7 +15,7 @@ const Admin = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (loginData.username === 'admin' && loginData.password === 'admin') {
+    if (loginData.username === 'brick_admin' && loginData.password === '12brick3') {
       setIsAuthenticated(true);
     } else {
       alert('Credenciais inválidas');
