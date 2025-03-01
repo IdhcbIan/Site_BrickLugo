@@ -34,7 +34,7 @@ const SocialLinks = styled.div`
 
 const SocialIcon = styled.a`
   color: ${seaGreen};
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   transition: color 0.3s ease;
   
   &:hover {
@@ -47,7 +47,7 @@ const StyledLink = styled.a`
   color: ${seaGreen};
   font-weight: 600;
   font-size: 1.2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Rozha One', serif;
   transition: all 0.3s ease;
   position: relative;
   padding: 0.5rem 1rem;

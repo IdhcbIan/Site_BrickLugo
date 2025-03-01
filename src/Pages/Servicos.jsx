@@ -8,6 +8,8 @@ import ToolsIcon from '../assets/Tools.png'
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+  
   body {
     margin: 0;
     padding: 0;
@@ -39,7 +41,7 @@ const ServiceSection = styled.section`
     font-size: 2.4rem;
     color: #ff6f61;
     margin-bottom: 2rem;
-    font-family: 'Unna', serif;
+    font-family: 'Rozha One', serif;
     text-align: center;
   }
 
@@ -50,7 +52,8 @@ const ServiceSection = styled.section`
     max-width: 800px;
     text-align: center;
     margin-bottom: 2rem;
-    font-family: 'Unna', serif;
+    font-family: 'Avenir Light', 'Avenir', sans-serif;
+    font-weight: 300;
   }
 
   img {
@@ -73,18 +76,13 @@ function Servicos() {
   const services = [
     {
       title: "Comunicação com hóspedes",
-      description: "Nossa equipe especializada gerencia toda a comunicação com os hóspedes, desde o primeiro contato até o check-out. Oferecemos suporte 24/7, garantindo uma experiência excepcional e respostas rápidas a qualquer necessidade durante a estadia.",
+      description: "Nossa equipe especializada gerencia toda a comunicação com os hóspedes, desde o primeiro contato até o check-out. Garantimos uma experiência excepcional e respostas rápidas a qualquer necessidade durante a estadia.",
       icon: TalkIcon
     },
     {
       title: "Limpeza e lavanderia", 
       description: "Mantemos os mais altos padrões de limpeza e higienização. Nossa equipe profissional realiza uma limpeza completa entre as estadias, incluindo troca de roupas de cama e banho, garantindo que cada hóspede encontre um ambiente impecável.",
       icon: CleanIcon
-    },
-    {
-      title: "Manutenção e pequenos reparos",
-      description: "Realizamos vistorias regulares e manutenção preventiva em seu imóvel. Nossa equipe técnica está sempre pronta para resolver qualquer problema rapidamente, preservando a qualidade e o valor do seu investimento.",
-      icon: ToolsIcon
     }
   ]
 

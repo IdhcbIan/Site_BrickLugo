@@ -8,15 +8,19 @@ import CleanIcon from './assets/Clean.png'
 import TalkIcon from './assets/Talk.png'
 import ToolsIcon from './assets/Tools.png'
 import LogoWhite from './assets/Logo1.png'
+import FloatingWhatsApp from './Legos/Floating'
 
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+  @import url('https://fontsgeek.com/fonts/avenir-light');
+  
   body {
     background-color: #f5f5f5;
     color: #333333;
     margin: 0;
     padding: 0;
-    font-family: 'Unna', serif;
+    font-family: 'Rozha One', serif;
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
   }
@@ -67,7 +71,7 @@ const HeroContent = styled.div`
     color: white;
     font-size: 1.4rem;
     margin: 0;
-    font-family: 'Unna', serif;
+    font-family: 'Avenir Light', sans-serif;
     display: flex;
     align-items: center;
     
@@ -114,14 +118,14 @@ const ProjectCard = styled(motion.div)`
     font-size: 1.6rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
-    font-family: 'Unna', serif;
+    font-family: 'Rozha One', serif;
   }
 
   p {
     color: #666666;
     line-height: 1.8;
     font-size: 1.1rem;
-    font-family: 'Unna', serif;
+    font-family: 'Avenir Light', sans-serif;
   }
 
   img {
@@ -160,7 +164,7 @@ const BookSection = styled.section`
       background: linear-gradient(135deg, #333333 0%, #ff6f61 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-family: 'Unna', serif;
+      font-family: 'Rozha One', serif;
     }
 
     p {
@@ -168,7 +172,7 @@ const BookSection = styled.section`
       line-height: 1.8;
       color: #666666;
       margin-bottom: 2rem;
-      font-family: 'Unna', serif;
+      font-family: 'Avenir Light', sans-serif;
     }
 
     ul {
@@ -180,7 +184,7 @@ const BookSection = styled.section`
         margin-bottom: 1rem;
         font-size: 1.1rem;
         color: #555555;
-        font-family: 'Unna', serif;
+        font-family: 'Avenir Light', sans-serif;
       }
     }
   }
@@ -198,7 +202,7 @@ const Footer = styled.footer`
   p {
     font-size: 1.1rem;
     font-weight: 500;
-    font-family: 'Unna', serif;
+    font-family: 'Avenir Light', sans-serif;
   }
 `
 
@@ -321,11 +325,11 @@ function App() {
                     borderRadius: '10px',
                     cursor: 'pointer',
                     fontWeight: '600',
-                    fontFamily: 'Unna, serif'
+                    fontFamily: 'Rozha One, serif'
                   }}
                 >
                   <a href="/guide" style={{ color: 'white', textDecoration: 'none' }}>
-                    Download
+                    Em breve...
                   </a>
                 </motion.button>
               </div>
@@ -335,6 +339,8 @@ function App() {
           <Footer>
             <p>© 2024 BrickLugo. Todos os direitos reservados.</p>
           </Footer>
+          
+          <FloatingWhatsApp />
         </motion.div>
       </AnimatePresence>
     </>

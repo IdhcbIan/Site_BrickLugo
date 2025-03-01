@@ -4,6 +4,8 @@ import Header from '../Legos/Header'
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+  
   body {
     margin: 0;
     padding: 0;
@@ -35,7 +37,7 @@ const TestimonialsSection = styled.section`
     font-size: 2.8rem;
     color: #ff6f61;
     margin-bottom: 3rem;
-    font-family: 'Unna', serif;
+    font-family: 'Rozha One', serif;
     text-align: center;
   }
 `
@@ -62,7 +64,7 @@ const TestimonialCard = styled(motion.div)`
     line-height: 1.6;
     color: #555;
     flex-grow: 1;
-    font-family: 'Unna', serif;
+    font-family: 'Avenir Light', 'Helvetica Neue', sans-serif;
     font-style: italic;
   }
 `

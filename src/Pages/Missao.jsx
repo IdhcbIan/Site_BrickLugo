@@ -8,6 +8,8 @@ import ToolsIcon from '../assets/Tools.png'
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+  
   body {
     margin: 0;
     padding: 0;
@@ -39,7 +41,7 @@ const ServiceSection = styled.section`
     font-size: 2.4rem;
     color: #ff6f61;
     margin-bottom: 2rem;
-    font-family: 'Unna', serif;
+    font-family: 'Rozha One', serif;
     text-align: center;
   }
 
@@ -50,7 +52,7 @@ const ServiceSection = styled.section`
     max-width: 800px;
     text-align: center;
     margin-bottom: 2rem;
-    font-family: 'Unna', serif;
+    font-family: 'Avenir Light', 'Avenir', sans-serif;
   }
 
   img {
@@ -84,7 +86,7 @@ const MissionSection = styled.section`
   h1 {
     font-size: 3rem;
     margin-bottom: 2rem;
-    font-family: 'Unna', serif;
+    font-family: 'Rozha One', serif;
     text-align: center;
     color: #ff6f61;
   }
@@ -95,7 +97,7 @@ const MissionSection = styled.section`
     max-width: 800px;
     text-align: center;
     margin-bottom: 2rem;
-    font-family: 'Unna', serif;
+    font-family: 'Avenir Light', 'Avenir', sans-serif;
   }
 `
 
@@ -114,7 +116,7 @@ const PassiveIncomeSection = styled.section`
   h2 {
     font-size: 2.6rem;
     margin-bottom: 2rem;
-    font-family: 'Unna', serif;
+    font-family: 'Rozha One', serif;
     text-align: center;
   }
 
@@ -124,7 +126,7 @@ const PassiveIncomeSection = styled.section`
     max-width: 800px;
     text-align: center;
     margin-bottom: 2rem;
-    font-family: 'Unna', serif;
+    font-family: 'Avenir Light', 'Avenir', sans-serif;
   }
 `
 
@@ -187,30 +189,12 @@ function Missao() {
             <h2>RENDA PASSIVA COM IMÓVEIS</h2>
             <p>
               Transforme seu imóvel em uma fonte de renda passiva consistente e lucrativa. Com a Brick Lugo, você maximiza o 
-              potencial do seu investimento imobiliário sem precisar se preocupar com a gestão diária. Nossa abordagem 
-              profissional garante ocupação otimizada e preços competitivos, resultando em retornos financeiros superiores 
-              aos aluguéis tradicionais.
+              potencial do seu investimento imobiliário sem precisar se preocupar com a gestão diária. Nossa abordagem profissional 
+              garante ocupação otimizada e preços competitivos, considerando a entrega de retorno financeiro superior ao aluguel tradicional.
             </p>
           </PassiveIncomeSection>
           
           <BrickDivider />
-          
-          <PassiveIncomeSection
-            as={motion.section}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            style={{ background: "#333333" }}
-          >
-            <h2>LIBERDADE FINANCEIRA</h2>
-            <p>
-              Alcance mais liberdade financeira com seu patrimônio imobiliário. Ao confiar a gestão do seu imóvel à Brick Lugo, 
-              você não apenas garante uma renda passiva consistente, mas também libera seu tempo para se dedicar a outras 
-              atividades e investimentos. Nossa expertise no mercado de aluguel atraves do Airbnb em Belo Horizonte assegura que 
-              seu imóvel tenha performance superior, contribuindo significativamente para sua independência financeira.
-            </p>
-          </PassiveIncomeSection>
         </motion.div>
       </PageWrapper>
     </>
