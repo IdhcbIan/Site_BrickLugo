@@ -83,6 +83,11 @@ function Servicos() {
       title: "Limpeza e lavanderia", 
       description: "Mantemos os mais altos padrões de limpeza e higienização. Nossa equipe profissional realiza uma limpeza completa entre as estadias, incluindo troca de roupas de cama e banho, garantindo que cada hóspede encontre um ambiente impecável.",
       icon: CleanIcon
+    },
+    {
+      title: "Manutenção",
+      description: "Em caso de manutenção, apontamos nossa equipe conhecida e confiável para as manutenções necessárias, garantindo que seu imóvel esteja sempre em perfeitas condições para receber os hóspedes.",
+      icon: ToolsIcon
     }
   ]
 
