@@ -3,7 +3,13 @@ import styled, { createGlobalStyle } from 'styled-components'
 import { FaWhatsapp } from 'react-icons/fa'
 
 const GlobalFontStyle = createGlobalStyle`
-  @import url('https://fontsgeek.com/fonts/avenir-light');
+  @font-face {
+    font-family: 'Avenir Light';
+    src: url('/fonts/AvenirLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
 `
 
 const FloatingContainer = styled.div`

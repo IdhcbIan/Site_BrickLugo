@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import Logo1 from '../assets/Logo2.avif'
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import GlobalStyle from '../styles/GlobalStyles'
+
 
 const seaGreen = '#a97b7f';
 
@@ -47,7 +49,6 @@ const StyledLink = styled.a`
   color: ${seaGreen};
   font-weight: 600;
   font-size: 1.2rem;
-  font-family: 'Rozha One', serif;
   transition: all 0.3s ease;
   position: relative;
   padding: 0.5rem 1rem;
@@ -77,25 +78,27 @@ const StyledLink = styled.a`
 
 function Header() {
   return (
-    <Nav>
-      <a href="/">
-        <Logo src={Logo1} alt="Logo Doria" />
-      </a>
-      <NavLinks>
-        <StyledLink href="/missao">Missão</StyledLink>
-        <StyledLink href="/servicos">Serviços</StyledLink>
-        <StyledLink href="/depoimentos">Depoimentos</StyledLink>
-        <StyledLink href="/financeiro">Financeiro</StyledLink>
-      </NavLinks>
-      <SocialLinks>
-        <SocialIcon href="https://www.instagram.com/bricklugo/" target="_blank" rel="noopener noreferrer">
-          <FaInstagram />
-        </SocialIcon>
-        <SocialIcon href="https://api.whatsapp.com/send?phone=5531995936705&text=Ol%C3%A1%2C%20eu%20vim%20pelo%20site%20da%20Brick%20Lugo%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20administra%C3%A7%C3%A3o%20de%20Airbnb" target="_blank" rel="noopener noreferrer">
-          <FaWhatsapp />
-        </SocialIcon>
-      </SocialLinks>
-    </Nav>
+    <>
+      <Nav>
+        <a href="/">
+          <Logo src={Logo1} alt="Logo Doria" />
+        </a>
+        <NavLinks>
+          <StyledLink href="/missao">Missão</StyledLink>
+          <StyledLink href="/servicos">Serviços</StyledLink>
+          <StyledLink href="/depoimentos">Depoimentos</StyledLink>
+          <StyledLink href="/financeiro">Financeiro</StyledLink>
+        </NavLinks>
+        <SocialLinks>
+          <SocialIcon href="https://www.instagram.com/bricklugo/" target="_blank" rel="noopener noreferrer">
+            <FaInstagram />
+          </SocialIcon>
+          <SocialIcon href="https://api.whatsapp.com/send?phone=5531995936705&text=Ol%C3%A1%2C%20eu%20vim%20pelo%20site%20da%20Brick%20Lugo%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20administra%C3%A7%C3%A3o%20de%20Airbnb" target="_blank" rel="noopener noreferrer">
+            <FaWhatsapp />
+          </SocialIcon>
+        </SocialLinks>
+      </Nav>
+    </>
   )
 }
 

@@ -12,8 +12,22 @@ import FloatingWhatsApp from './Legos/Floating'
 
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
-  @import url('https://fontsgeek.com/fonts/avenir-light');
+
+  @font-face {
+    font-family: 'Rozha One';
+    src: url('/fonts/RozhaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Avenir Light';
+    src: url('/fonts/AvenirLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
   
   body {
     background-color: #f5f5f5;
@@ -302,39 +316,6 @@ function App() {
             ))}
           </ProjectGrid>
 
-          <BookSection>
-            <motion.div 
-              className="book-container"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-              <div className="book-content">
-                <h2>Download Nosso PDF - Benefícios da BrickLugo & Airbnb</h2>
-                <p>Descubra as vantagens de alugar seu imóvel através da BrickLugo e Airbnb em comparação com a locação tradicional. Nosso guia completo mostra como você pode maximizar seus rendimentos e ter mais segurança com seu imóvel.</p>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  style={{
-                    padding: '1rem 2rem',
-                    fontSize: '1.1rem',
-                    backgroundColor: '#ff6f61',
-                    color: 'white',
-                    border: 'none',
-                    borderRadius: '10px',
-                    cursor: 'pointer',
-                    fontWeight: '600',
-                    fontFamily: 'Rozha One, serif'
-                  }}
-                >
-                  <a href="/guide" style={{ color: 'white', textDecoration: 'none' }}>
-                    Em breve...
-                  </a>
-                </motion.button>
-              </div>
-            </motion.div>
-          </BookSection>
 
           <Footer>
             <p>© 2024 BrickLugo. Todos os direitos reservados.</p>
