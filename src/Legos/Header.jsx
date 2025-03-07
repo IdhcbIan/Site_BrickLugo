@@ -41,13 +41,13 @@ const SocialIcon = styled.a`
   transition: color 0.3s ease;
   
   &:hover {
-    color: #333;
+    color: #404040;
   }
 `
 
 const StyledLink = styled.a`
   text-decoration: none;
-  color: ${seaGreen};
+  color: #404040;
   font-weight: 600;
   font-size: 1.2rem;
   transition: all 0.3s ease;
@@ -56,7 +56,7 @@ const StyledLink = styled.a`
   font-family: 'Avenir Light', sans-serif;
   font-weight: 400;
   &:hover {
-    color: #333;
+    color: black;
   }
 
   &::after {

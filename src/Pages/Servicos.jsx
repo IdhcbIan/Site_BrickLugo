@@ -29,7 +29,7 @@ const ServiceSection = styled.section`
 
   h2 {
     font-size: 2.4rem;
-    color: #ff6f61;
+    color: #404040;
     margin-bottom: 2rem;
     font-family: 'Rozha One', serif;
     text-align: center;

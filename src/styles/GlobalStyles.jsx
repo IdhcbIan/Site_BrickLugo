@@ -23,6 +23,15 @@ const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
   }
+  h1 {
+    color: #404040;
+  }
+  h2 {
+    color: #404040;
+  }
+  h3 {
+    color: #404040;
+  }
 `;
 
 export default GlobalStyles;

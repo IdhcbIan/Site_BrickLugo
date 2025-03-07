@@ -55,10 +55,7 @@ const ServiceSection = styled.section`
 const BrickDivider = styled.div`
   height: 200px;
   width: 100%;
-  background-image: url(${BrickImage});
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-color: #dac6bb;
 `
 
 const MissionSection = styled.section`
@@ -78,7 +75,7 @@ const MissionSection = styled.section`
     margin-bottom: 2rem;
     font-family: 'Rozha One', serif;
     text-align: center;
-    color: #ff6f61;
+    color: #404040;
   }
 
   p {
@@ -99,8 +96,8 @@ const PassiveIncomeSection = styled.section`
   align-items: center;
   justify-content: center;
   padding: 4rem 2rem;
-  background: #ff6f61;
-  color: white;
+  background: #efe9e6;
+  color: #404040;
   width: 100%;
   box-sizing: border-box;
 

@@ -47,7 +47,7 @@ const Hero = styled.section`
   justify-content: center;
   padding: 4rem;
   position: relative;
-  border-bottom: 3px solid #ff6f61;
+  border-bottom: 3px solid #404040;
   box-shadow: 0 4px 30px rgba(255, 111, 97, 0.15);
   background-image: url(${HallImage});
   background-size: cover;
@@ -57,7 +57,7 @@ const Hero = styled.section`
     content: '';
     position: absolute;
     inset: 0;
-    border: 1px solid rgba(255, 111, 97, 0.3);
+    border: 1px solid #404040;
     pointer-events: none;
   }
   
@@ -103,10 +103,7 @@ const ProjectGrid = styled.section`
   max-width: 1400px;
   padding: 0 2rem;
   position: relative;
-  background-image: url(${BrickImage});
-  background-size: cover;
-  background-position: center, url(${HallImage}), cover, center;
-  background-attachment: fixed, scroll;
+  background-color: #dac6bb;
   padding-top: 3rem;
   padding-bottom: 3rem;
 `
@@ -123,8 +120,8 @@ const ProjectCard = styled(motion.div)`
 
   &:hover {
     transform: translateY(-8px);
-    border-color: #ff6f61;
-    box-shadow: 0 15px 35px rgba(255, 111, 97, 0.2);
+    border-color: #404040;
+    box-shadow: 0 22px 35px rgba(255, 111, 97, 0.2);
   }
 
   h3 {
@@ -154,7 +151,7 @@ const BookSection = styled.section`
   padding: 5rem 2rem;
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
-  border-bottom: 3px solid #ff6f61;
+  border-bottom: 3px solid #404040;
 
   .book-container {
     max-width: 1200px;
@@ -174,9 +171,9 @@ const BookSection = styled.section`
 
     h2 {
       font-size: 2rem;
-      color: #ff6f61;
+      color: #404040;
       margin-bottom: 1.5rem;
-      background: linear-gradient(135deg, #333333 0%, #ff6f61 100%);
+      background: linear-gradient(135deg, #333333 0%, #404040 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-family: 'Rozha One', serif;
@@ -211,7 +208,7 @@ const Footer = styled.footer`
   padding: 3rem;
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
-  border-top: 3px solid #ff6f61;
+  border-top: 3px solid #404040;
   box-shadow: 0 -4px 30px rgba(255, 111, 97, 0.1);
 
   p {

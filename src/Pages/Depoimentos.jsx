@@ -25,7 +25,7 @@ const TestimonialsSection = styled.section`
 
   h1 {
     font-size: 2.8rem;
-    color: #ff6f61;
+    color: #404040;
     margin-bottom: 3rem;
     font-family: 'Rozha One', serif;
     text-align: center;
