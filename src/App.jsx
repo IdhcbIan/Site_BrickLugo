@@ -100,7 +100,7 @@ const ProjectGrid = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2.5rem;
-  max-width: 1400px;
+  width: 100%;
   padding: 0 2rem;
   position: relative;
   background-color: #dac6bb;
