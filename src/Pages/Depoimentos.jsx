@@ -1,17 +1,7 @@
 import { motion } from 'framer-motion'
 import styled from 'styled-components'
 import Header from '../Legos/Header'
-import { createGlobalStyle } from 'styled-components'
-
-const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
-  
-  body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-`
+import GlobalStyles from '../styles/GlobalStyles'
 
 const PageWrapper = styled.div`
   width: 100vw;
@@ -64,7 +54,8 @@ const TestimonialCard = styled(motion.div)`
     line-height: 1.6;
     color: #555;
     flex-grow: 1;
-    font-family: 'Avenir Light', 'Helvetica Neue', sans-serif;
+    font-family: 'Avenir Light', sans-serif;
+    font-weight: 360;
     font-style: italic;
   }
 `
@@ -107,7 +98,7 @@ function Depoimentos() {
 
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyles />
       <PageWrapper>
         <motion.div
           initial={{ opacity: 0 }}

@@ -5,17 +5,7 @@ import BrickImage from '../assets/Brick.avif'
 import TalkIcon from '../assets/Talk.png'
 import CleanIcon from '../assets/Clean.png'
 import ToolsIcon from '../assets/Tools.png'
-import { createGlobalStyle } from 'styled-components'
-
-const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
-  
-  body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-`
+import GlobalStyles from '../styles/GlobalStyles'
 
 const PageWrapper = styled.div`
   width: 100vw;
@@ -98,6 +88,7 @@ const MissionSection = styled.section`
     text-align: center;
     margin-bottom: 2rem;
     font-family: 'Avenir Light', 'Avenir', sans-serif;
+    font-weight: 360;
   }
 `
 
@@ -127,6 +118,7 @@ const PassiveIncomeSection = styled.section`
     text-align: center;
     margin-bottom: 2rem;
     font-family: 'Avenir Light', 'Avenir', sans-serif;
+    font-weight: 360;
   }
 `
 
@@ -151,7 +143,7 @@ function Missao() {
 
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyles />
       <PageWrapper>
         <motion.div
           initial={{ opacity: 0 }}

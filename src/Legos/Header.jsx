@@ -16,6 +16,7 @@ const Nav = styled.nav`
   min-height: 80px;
   border-bottom: 1px solid #e0e0e0;
   transition: background-color 0.3s ease;
+  font-family: 'Avenir Light', sans-serif;
 `
 
 const Logo = styled.img`
@@ -52,7 +53,8 @@ const StyledLink = styled.a`
   transition: all 0.3s ease;
   position: relative;
   padding: 0.5rem 1rem;
-
+  font-family: 'Avenir Light', sans-serif;
+  font-weight: 400;
   &:hover {
     color: #333;
   }

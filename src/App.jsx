@@ -140,6 +140,7 @@ const ProjectCard = styled(motion.div)`
     line-height: 1.8;
     font-size: 1.1rem;
     font-family: 'Avenir Light', sans-serif;
+    font-weight: 395;
   }
 
   img {
